@@ -173,8 +173,7 @@ font-family: 'Oswald', sans-serif;
 }
 
 #loading{
-    position: absolute;
-    display: flex;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -184,6 +183,8 @@ font-family: 'Oswald', sans-serif;
     border: 10px solid black;
     border-top: 10px solid red;
     animation: animate 15.5s infinite linear;
+    z-index: 999999;
+
 }
 
 @keyframes animate{
